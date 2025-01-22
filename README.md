@@ -1,41 +1,46 @@
-Todo List App - Frontend Setup Guide (Next.js)
-Overview
-This is the Frontend for the Todo List App, built with Next.js. It allows users to:
+# Todo List App - Frontend (Next.js)
 
-Add, Edit, and Delete tasks.
-Toggle tasks as Completed or Not Completed.
-The frontend communicates with the Express.js API backend.
+## Overview
 
-Prerequisites
-Node.js (v14 or later) installed.
-npm or yarn for package management.
-Setup Instructions
-1. Clone the Repository
-Clone the repository to your local machine:
+This is the frontend for the Todo List App, built using **Next.js**. It communicates with the **Express.js API backend** to perform the following functionalities:
 
-git clone https://github.com/harrisMaqsood/Next.js-app
-cd Next.js-app
+- **Add, Edit, and Delete tasks**
+- **Toggle tasks as Completed or Not Completed**
 
-2. Install Dependencies
-Install the necessary dependencies using npm or yarn:
+The frontend communicates with the backend API running on **http://localhost:5000**.
 
-npm install
+---
 
-With yarn:
-yarn install
+## Prerequisites
 
-3. Configure Environment Variables
+Before setting up the project, make sure you have the following installed:
 
-Ensure the backend is running at http://localhost:5000.
+- **Node.js (v14 or later)**  
+  [Download Node.js](https://nodejs.org/en/)
+  
+- **npm** or **yarn** for package management:
+  - **npm**: [Install npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+  - **yarn**: [Install yarn](https://yarnpkg.com/getting-started/install)
 
-4. Run the Development Server
-Start the development server:
-npm run dev
-The app will be available at http://localhost:3000.
+---
 
-How the App Works
-Home View: Displays a list of tasks, with options to toggle completion, delete, or create tasks.
-Create/Edit Task Page: A form to add or edit tasks, including title and color options.
-State Management: Uses React hooks (useState, useEffect) to manage task state.
+## Setup Instructions
 
-Ensure the backend API is running (npm start in the backend directory).
+### 1. Clone the Repository
+- Clone the repository to your local machine:
+  ```bash
+  git clone https://github.com/harrisMaqsood/Next.js-app
+
+### 2. Navigate into the project directory
+- cd Next.js-app
+
+### 3. Install Dependencies
+- npm install
+
+### 4. Configure Environment Variables
+- Ensure the backend API is running at http://localhost:5000. You will also need to configure environment variables for the frontend.
+
+### 5. Run the Development Server
+- npm run dev
+
+
